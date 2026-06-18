@@ -1,8 +1,10 @@
 console.log("Getting Bank Details...")
 
 window.addEventListener("load", function() {
-const loader = document.getElementById("loading-screen");
-loader.style.opacity = "0";
-
-
-}
+  const overlay = document.getElementById("loading-overlay");
+  overlay.classList.add("fade-out");
+  
+  setTimeout(function() {
+    overlay.style.display = "none";
+  }, 500); 
+});
