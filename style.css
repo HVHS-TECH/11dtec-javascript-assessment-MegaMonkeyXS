@@ -3,5 +3,6 @@ body {
   background-image: url('Minecraft.gif')
   color: #ffffff;
   margin: 0;
-  font-family: 'Monospace', cursive;
+  font-family: "Fira Mono", monospace;
+
 }
