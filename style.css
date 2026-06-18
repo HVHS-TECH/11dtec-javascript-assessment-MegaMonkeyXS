@@ -13,7 +13,7 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-color: #ff3535;
+background-color: #f13434;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -23,7 +23,7 @@ transition: opacity 0.5s ease;
 }
 
 #loading-screen img {
-width: 100px;
+width: 1750px;
 height: auto;
 
 }
