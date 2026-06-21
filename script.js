@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     setTimeout(function() {
       overlay.style.display = "none";
-    }, 500); 
+    }, 1000); 
 
-  }, 3000); 
+  }, 6000); 
 });
 
