@@ -28,3 +28,7 @@ width: 1750px;
 height: auto;
 
 }
+
+.fade-out {
+    opacity: 0;
+}

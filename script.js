@@ -1,7 +1,7 @@
 console.log("Getting Bank Details...")
 
 document.addEventListener("DOMContentLoaded", function() {
-  const overlay = document.getElementById("loading-overlay");
+ const overlay = document.getElementById("loading-screen");
 
  
   setTimeout(function() {
