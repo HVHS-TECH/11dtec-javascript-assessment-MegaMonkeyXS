@@ -95,38 +95,38 @@ const orderForm = document.getElementById("orderForm");
 const ordersDiv = document.getElementById("orders");
 
 function updateTotal() {
-    const price = parseInt(
-        itemSelect.options[itemSelect.selectedIndex].dataset.price
-    );
+const price = parseInt(
+itemSelect.options[itemSelect.selectedIndex].dataset.price
+);
 
-    const quantity = parseInt(quantityInput.value);
+const quantity = parseInt(quantityInput.value);
 
-    totalText.textContent = `Total: $${price * quantity}`;
+totalText.textContent = `Total: $${price * quantity}`;
 }
 
 itemSelect.addEventListener("change", updateTotal);
 quantityInput.addEventListener("input", updateTotal);
 
 orderForm.addEventListener("submit", function(event) {
-    event.preventDefault();
+event.preventDefault();
 
-    const item = itemSelect.value;
-    const quantity = quantityInput.value;
+const item = itemSelect.value;
+const quantity = quantityInput.value;
 
-    const price = parseInt(
-        itemSelect.options[itemSelect.selectedIndex].dataset.price
-    );
+const price = parseInt(
+itemSelect.options[itemSelect.selectedIndex].dataset.price
+);
 
-    const total = price * quantity;
+const total = price * quantity;
 
-    ordersDiv.innerHTML += `
-        <div style="background:white;padding:10px;margin:10px 0;border:2px solid black;">
-            <strong>Order Placed!</strong><br>
-            Item: ${item}<br>
-            Quantity: ${quantity}<br>
-            Total: $${total}
-        </div>
-    `;
+ordersDiv.innerHTML += `
+<div style="background:white;padding:10px;margin:10px 0;border:2px solid black;">
+<strong>Order Placed!</strong><br>
+Item: ${item}<br>
+Quantity: ${quantity}<br>
+Total: $${total}
+</div>
+`;
 });
 
 updateTotal();
