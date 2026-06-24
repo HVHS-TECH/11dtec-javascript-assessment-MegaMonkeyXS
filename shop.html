@@ -45,9 +45,39 @@ margin: 0;
 </head>
 
 <script>
+const itemSelect = document.getElementById("item")
+const itemSelect = document.getElementById("quantity")
+const totalText = document.getElementById("total")
+const orderForm = document.getElementById("orderForm")
+const ordersDiv = document.getElementById("orders")
+
+function updateTotal() {
+const price = parseInt(
+itemSelect.options[itemSelect.selectedIndex].dataset.price
+
+);
+
+const quantity = parseInt(quantityInput.value);
+
+totalText.textContent =
+`Total: $${price * quantity}`;
+
+}
+
+itemSelect.addEventListener("change", updateTotal);
+quantityInput.addEventListener("input, updateTotal");
+
+orderForm.addEventListener("submit", function(event) {
+event.preventDefault();
+
+const item = itemSelect.value;
+const quantity = quantityInput.value;
+const price = parseInt(
+itemSelect.options[itemSelect.selectedIndex].dataset.price
+);
 
 
-  
+})
 </script>
 <body>
  <div class="topnav">
