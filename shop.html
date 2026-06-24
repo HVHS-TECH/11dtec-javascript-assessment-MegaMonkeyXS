@@ -76,8 +76,27 @@ const price = parseInt(
 itemSelect.options[itemSelect.selectedIndex].dataset.price
 );
 
+const total = price * quantity;
 
-})
+ordersDiv.innerHTML +=`
+<div style="
+background:white;
+padding:10px;
+margin:10px 0;
+border:2px solid black;
+">
+
+<strong>Order Placed!</strong><br>
+Item: ${item}<br>
+Quantity: ${quantity}<br>
+Total: $${total}
+</div>
+
+`;
+
+});
+
+updateTotal();
 </script>
 <body>
  <div class="topnav">
