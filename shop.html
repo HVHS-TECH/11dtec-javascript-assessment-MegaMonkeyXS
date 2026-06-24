@@ -44,9 +44,20 @@ margin: 0;
 
 </head>
 
+
+<body>
+ <div class="topnav">
+ <a class="active" href="index.html">Home</a> 
+ <a href="shop.html">Shop</a>
+ <a href="credits.html">Credits</a>
+ </div>
+<div id="loading-screen">
+<img src="Rainbow.gif" alt="Loading...">
+<div class="overlay-image" src="Images/LogoREALFR.png">Baka</div>
+<div class="overlay-text">MITEMS: THE SHOP</div>
 <script>
 const itemSelect = document.getElementById("item")
-const itemSelect = document.getElementById("quantity")
+const quantityInput = document.getElementById("quantity")
 const totalText = document.getElementById("total")
 const orderForm = document.getElementById("orderForm")
 const ordersDiv = document.getElementById("orders")
@@ -98,16 +109,7 @@ Total: $${total}
 
 updateTotal();
 </script>
-<body>
- <div class="topnav">
- <a class="active" href="index.html">Home</a> 
- <a href="shop.html">Shop</a>
- <a href="credits.html">Credits</a>
- </div>
-<div id="loading-screen">
-<img src="Rainbow.gif" alt="Loading...">
-<div class="overlay-image" src="Images/LogoREALFR.png">Baka</div>
-<div class="overlay-text">MITEMS: THE SHOP</div>
+
 </div>
 <img src="Images/LogoREALFR.png" alt="Mitems Logo" style="width: 250px; height: auto;">
 
