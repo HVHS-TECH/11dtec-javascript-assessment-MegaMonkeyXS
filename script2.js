@@ -54,6 +54,8 @@ Quantity: ${quantity}<br>
 Total: $${total}
 
 <a href="${download}" download
+const total = price * quantity;
+const download = itemSelect.options[itemSelect.selectedIndex].dataset.download;
 style="
 display:inline-block;
 margin-top:15px;
