@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     font-size:13px;
                     color:#666;
                 ">
-                    This download is only a <strong>.jar</strong> file for Minecraft and is not intended or used for any malicious purpose.
+                    This download is only a <strong>.jar</strong> Fabric file for Minecraft and is not intended or used for any malicious purpose external to Fabric's Mods Folder.
                 </p>
             </div>
         `;
