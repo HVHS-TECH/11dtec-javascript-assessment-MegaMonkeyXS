@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     font-size:13px;
                     color:#666;
                 ">
-                    This download is only a <strong>.jar</strong> Fabric file for Minecraft and is not intended or used for any malicious purpose external to Fabric's Mods Folder.
+                    This download is a .jar file exclusive for Minecraft Fabric and is only meant to be used inside your Fabric mods folder. Do not use externally.
                 </p>
             </div>
         `;
