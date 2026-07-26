@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 1000);
 
     }, 3000);
-
+  
     // Elements
     const itemSelect = document.getElementById("item");
     const quantityInput = document.getElementById("quantity");
